@@ -1,30 +1,36 @@
-# Module 12 Report Template
+# Module 12 Report 
+## Analysis
 
-## Overview of the Analysis
+The primary objective of this credit risk analysis is to anticipate loan risk by leveraging historical lending data sourced from a peer-to-peer lending company. This involves partitioning the data into training and testing sets and subsequently constructing a logistic regression model using the original dataset.
 
-* The purpose of this credit risk analysis is to predict loan risk based on historical lending data from a peer to peer lending company by splitting the data into training and testing sets and creating a logistical regression model with the original data.
-* The financial information we are looking at contains information on loans inidicating their status, healthy=0 and unhealthy=1, meaning there is a higher risk of default. 
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+The financial data under consideration includes comprehensive information on loans, categorizing them as either healthy (0) or unhealthy/high risk (1). Employing Machine Learning techniques, our goal is to discern and classify loans into these categories based on the status provided by the lending company.
+
+Utilizing the furnished dataset, we meticulously developed a logistic regression model to achieve this classification.
+
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+* Machine Learning Model 1: Logistic Regression
+  * Accuracy 0.99
+   * The logistic regression model achieved an impressive accuracy score of 0.99, indicating a 99% correct prediction rate and overall accuracy in loan outcome predictions.
+  
+  * Precision:
+   * Healthy Loans:1.0
+    * The precision for healthy loans is 1.00, implying that all loans predicted as healthy and low risk were indeed low risk.
+   * High Risk Loans: 0.87
+    * For high-risk loans, the precision is 0.87, indicating that 87% of predicted high-risk loans were accurately classified as such.
 
-* Machine Learning Model 1:
-  * Accuracy- the ratio of correctly predicted instances to the total instances.
-  The accuracy score of the logistic regression model is 0.99 indicating that it correctly predicts loan outcomes for 99% of cases and is 99% accurate in it's predictions.
-  * Precision- ratio of true positive to sum of true positive and negative
-    Healthy Loans had a precision of 1.00 meaning that among the loans predicted as healthy and low risk, all of them actually were low risk
-    High Risk Loans had a precision of 0.87 meaning that among the high risk loans, 87% are actually high risk
+  * Recall Score:
+    * Healthy Loans:1.00
+     * The recall score for healthy loans is 1.00, meaning the model correctly identifies all healthy loans.
+    * High Risk Loans: 0.95 
+     * The recall score for high-risk loans is 0.95, demonstrating that the model effectively identifies 95% of high-risk     loans, resulting in a low false negative rate and suggesting a high capacity for capturing high-risk loans effectively.
 
-  * Recall Score- ratio of true positives to the sume of true positive and false negatives
-    Healthy Loans had a recall score of 1.00 meaning the model correctly identifies all healthy loans
-    High Risk Loans had a recall score 0.95 meaning that model correctly identifies 95% of high risk loans, so it has a low false negatrive rate suggesting it is effectively capturing a high amount of high risk loans.
 
 ## Summary
 
 
-This model performs very well with high precision and recall. This is particularily true in the healthy loans class.  There is slightly lowere precision in the high risk loans, but that is to be expected in an imbalanced data set such as this. This model has excellent at identifying risk and could be used with confidence. I would however want their to be a human componant to this analysis, as there are always extenuating circumstances that should be considered. 
+The logistic regression model, Machine Learning Model 1, exhibits robust performance in predicting loan outcomes. With an accuracy score of 0.99, it correctly predicts loan results for 99% of cases. Precision analysis reveals a perfect identification of healthy loans (1.00) and a slightly less perfect 87% precision for high-risk loans. Furthermore, the recall scores showcase a perfect identification of healthy loans (1.00) and an excellent 95% recall for high-risk loans, indicating the model's efficacy in capturing a significant proportion of high-risk cases with a low false negative rate. Overall, Machine Learning Model 1 demonstrates high accuracy and reliability in predicting loan risks. 
+
+I would however want their to be a human componant to this analysis, as there are always extenuating circumstances that should be considered. 
 
