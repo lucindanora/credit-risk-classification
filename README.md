@@ -14,7 +14,7 @@ Answer the following question:
 
 References/Resources: Completed with study group, and class activites, chatgpt
 
-# Module 12 Report 
+# Module 20 Report 
 ## Analysis
 
 The primary objective of this credit risk analysis is to anticipate loan risk by leveraging historical lending data sourced from a peer-to-peer lending company. This involves partitioning the data into training and testing sets and subsequently constructing a logistic regression model using the original dataset.
